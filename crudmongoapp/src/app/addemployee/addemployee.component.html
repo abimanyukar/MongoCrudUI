@@ -1,0 +1,57 @@
+<div class="container" style="padding-top:40px;">    
+    <div class="row">    
+      <div class="col-md-10 mx-auto">    
+        <div class="card mx-4">   
+          <div class="card-head p-4">  
+              <div class="col-sm-12 btn btn-success">  
+                  Employee's Information  
+                </div>  
+          </div>   
+          <div class="card-body p-4">    
+       <form [formGroup]="Addemployee" (ngSubmit)="onFormSubmit()">  
+      <div class="col-sm-12">  
+        <div class="card-body">  
+          <!-- <div class="row"> -->  
+          <div class="form-group ">  
+
+            <label class="col-sm-2 control-label" for="Name">Name</label>  
+            <div class="col-sm-10">  
+              <input type="text" class="form-control" placeholder="Enter name" formControlName="Name">  
+            </div>  
+          </div>  
+          <div class="form-group ">  
+            <label class="col-sm-2 control-label" for="Department">Department</label>  
+            <div class="col-sm-10">  
+              <input type="text" class="form-control" placeholder="Enter Department" formControlName="Department">  
+            </div>  
+          </div>  
+          <div class="form-group ">  
+            <label class="col-sm-2 control-label" for="Age">Age</label>  
+            <div class="col-sm-10">  
+              <input type="text" class="form-control" placeholder="Enter Age" formControlName="Age">  
+            </div>  
+          </div>  
+          <div class="form-group ">  
+            <label class="col-sm-2 control-label" for="City">City</label>  
+            <div class="col-sm-10">  
+              <input type="text" class="form-control" placeholder="Enter City" formControlName="City">  
+            </div>  
+          </div>  
+          <div class="form-group ">  
+            <label class="col-sm-2 control-label" for="Technology">Technology</label>  
+            <div class="col-sm-10">  
+              <input type="text" class="form-control" placeholder="Enter Technology" formControlName="Technology">  
+            </div>  
+          </div>  
+
+        </div>  
+      </div>  
+      <div class="col-6 text-right">    
+          <button class="btn btn-primary px-10" type="submit">Add </button>  
+        </div>  
+    </form>  
+        </div>    
+      </div>    
+    </div>    
+    </div>   
+  </div>
